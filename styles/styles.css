@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*CARACTERÍSTICAS COMUNES*/
+
+h1 {
+    font-size: 6.8vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 3vh;
+    font-weight: normal;
+}
+
+p {
+    font-size: 2.4vh;
+    line-height: 1.6;
+    margin-bottom: 4vh; 
+}
+
+h1, p {
+    padding: 0 3vh;
+}
+
+h1, h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, p, h2 {
+    color:#060A24;
+}
+
+p, .button {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h2 {
+    font-size: 3.8vh;
+    font-weight: 600;
+    text-align: center;
+    height: 6vh;  
+    margin-top: 3vh;
+}
+
+.container-button {
+    width: inherit;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.button {
+    background-color:#00F3BB;
+    font-size: 2.5vh;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #060A24;
+    width: 90%;
+    height: 7vh;
+    margin-bottom: 10vh; 
+    cursor: pointer;
+    display: inline-block;
+    line-height: 7vh;
+    border-radius: 5%;
+}
+
+.button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFF;
+}
+
+.button a {
+    text-decoration: none;
+    color: #060A24;
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+}
+
+.button a:hover {
+    color: #FFFF;
+}
+
+i {
+    padding: 20px;
+    display: inline;
+    color: black;
+}
+
+
+/*HEADER*/
+
+header {
+    text-align: right;
+    margin-bottom: 10vh;
+    height: 10vh;
+}
+
+#logo {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 3.5vh;
+    left: 4vh;
+    z-index: 2;
+}
+
+nav {
+    width: 97%;
+    height: 6vh;
+    margin-top: 2vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: #060A24;
+    line-height: 6vh;
+    margin-right: 3vh;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+
+nav a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+
+nav a:active {
+    color: rgba(6,10,36,0.56);
+}
+
+label {
+    margin: 2vh 3vh;
+    font-size: 4vh;
+    width: 4vh;
+    float: right;
+    display: none;
+}
+
+#hamburger {
+    display: none;
+} 
+
+#equis {
+    display: none;
+}
+
+
+/*SECCIÓN: INTRODUCCIÓN*/
+
+#p-intro-desktop {
+    display: none;
+}
+#container-button {
+    text-align: center;
+}
+
+
+/*SECCIÓN: EPISODIOS*/
+
+#episodios h1 {
+    color: white;
+    margin-bottom: 7vh;
+    text-align: left;
+}
+
+
+.reposo-diagonal {
+    position: relative;
+    height: 30vw;
+    overflow: hidden;
+    width: inherit;
+}
+.efecto-diagonal {
+    position: absolute;
+    width: 100vw;
+    height: 30vw;
+    background-color: #0000FF;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+}
+#efecto-diagonal {
+    transform-origin: top left;
+    background-color: #0000A3;
+}
+
+
+.container-episodios {
+    background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
+    width: inherit;
+}
+#flex-container-episodios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#flex-container-episodios > div {
+    width: 550px;
+    margin: 0 2vw 4vw 2vw;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/*SECCIÓN: DE DÓNDE VENIMOS*/
+
+#flex-container-donde-venimos {
+    flex-flow: column;
+}
+#flex-container-donde-venimos > div {
+    width: 100%;
+}
+#flex-container-donde-venimos img {
+    width: 95vw;
+    height: 150vw;
+    position: relative;
+    top: -17vw;
+    left: 2vw;
+    z-index: 1;
+}
+#flex-container-donde-venimos p {
+    padding: 3vh;
+    font-size: 2.5h;
+}
+
+
+/*SECCIÓN: INVITADOS ESTELARES*/
+
+#flex-container-invitados {
+    flex-flow: column;
+    margin-bottom: 3vh;
+}
+#flex-container-invitados > div {
+    width: 100%;
+    height: 80vw;
+}
+#flex-container-invitados img {
+    width: inherit;
+    height: inherit;
+}
+
+
+/*SECCIÓN: ALGUNOS DE NUESTROS TEMAS*/
+
+#flex-container-temas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#flex-container-temas > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32vh;
+    height: 20vh;
+    margin: 4vh 10vh 14vh 10vh; 
+}
+
+#temas img {
+    width: 30vw;
+    height: 30vw;
+}
+
+#div-repensando-la-programacion {
+    padding-bottom: 7vh;
+}
+
+
+/*NOVEDADES*/
+
+.container-episodios h1 {
+    color: white;
+    text-align: center;
+    margin-left: 2vw;
+}
+
+
+/*FOOTER*/
+
+#flex-container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#flex-container-footer > div {
+    width: 100%;
+    text-align: center;
+    margin: 1vh;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 2vh;
+}
+
+/* MENÚ PARA CELULAR Y TABLET*/
+
+@media only screen and (max-width: 727px) {
+
+    nav {
+        text-align: center;
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        z-index: 1;
+    }
+  
+    nav a {
+        display: block;
+        margin: 0;
+        background-color:#0000EC;
+        font-size: 3vh;
+        color: #FFFF;
+        font-family:'IBM Plex Mono', monospace;
+        text-align: left;
+        padding: 3.8vh;
+    }
+
+    nav a:visited {
+        color: #FFFF;
+    }
+  
+    label {
+          display: block;   
+    }
+    
+    #hamburger:checked + div label:nth-of-type(2) {
+          display: block;   
+    }   
+    #hamburger:checked + div label:nth-of-type(1) {
+          display: none;
+    }
+    #hamburger:checked + div + nav {
+          display: block;   
+    }
+}
+
+/*VERSIÓN PARA TELÉFONO*/
+
+@media only screen and (max-width: 537px) {
+
+    #p-intro-desktop {
+        display: none;
+    }
+
+    #p-intro-mobile {
+        display: block;
+        width: inherit;
+        padding-left: 8vw;
+    }
+
+    #h1-intro {
+        display: block;
+        padding: 0 8vw;
+        margin-bottom: 7vh;
+    }
+
+    p {
+        padding: 0 8vw;
+        margin-bottom: 7vh;
+    }
+    
+    .container-button {
+        width: inherit;
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+
+    .button {
+        width: 85%;
+    }
+}
+
+/*VERSIÓN TABLET*/
+
+@media only screen and (min-width: 538px) {
+    
+    h1, p {
+        padding: 0 8vw;
+        margin-bottom: 7vh;
+    }
+    #h1-intro {
+        display: block;
+        padding: 0 8vw;
+        margin-bottom: 5vh;
+    }
+    #p-intro-desktop {
+        display: none;
+    }
+
+    #p-intro-mobile {
+        display: block;
+        width: inherit;
+        padding-left: 8vw;
+    }
+
+    .reposo-diagonal {
+        height: 28vh;
+    }
+    .efecto-diagonal {
+        height: 28vh;
+    }
+
+    #flex-container-donde-venimos p {
+        padding-left: 8vw;
+        padding-top: 0;
+        font-size: 2vw;
+    }
+
+    #flex-container-invitados {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 4vh;  
+    }
+    #flex-container-invitados > div {
+        width: 50%;
+        height: 36vw;
+    }
+    #flex-container-invitados img {
+        width: 100%;
+        height: inherit;
+    }
+
+
+    #flex-container-donde-venimos img {
+        width: 65vw;
+        height: 100vw;
+        position: relative;
+        top: -14vw;
+        left: 18%;
+        z-index: 1;
+    }
+
+    #container-button {
+        text-align: left;
+        margin-left: 8vw;
+    }
+    .button {
+        width: 40vw;
+        font-size: 2vh;
+    }
+}
+
+/*VERSIÓN DESKTOP*/
+
+@media only screen and (min-width: 800px) {
+    
+    /*CARACTERÍSTICAS COMUNES*/
+
+    h1 {
+        padding-left: 13vw;
+        margin-bottom: 3vh;
+        font-size: 5.5vh;
+    }
+
+    /*SECCIÓN: INTRODUCCIÓN*/
+
+    #h1-intro {
+        font-size: 8vh;
+        padding-left: 13vw;
+        margin-bottom: 3vh;
+    }
+
+    #dot {
+        color: blue;
+    }
+
+    #p-intro-mobile {
+        display: none;
+    }
+    
+    #p-intro-desktop {
+        display: block;
+        width: inherit;
+        padding-left: 13vw;
+    }
+
+    #container-button {
+        text-align: left;
+        margin-left: 13vw;
+    }
+
+    .button {
+        width: 20vw;
+        font-size: 2vh;
+    }
+
+
+    /*SECCIÓN: EPISODIOS*/
+
+    .reposo-diagonal {
+        height: 28vh;
+    }
+    .efecto-diagonal {
+        height: 28vh;
+    }
+
+    #episodios h1 {
+        margin-left: 12vw;
+        padding-bottom: 0;
+    }
+    
+
+    /*SECCIÓN: DE DÓNDE VENIMOS*/
+
+    #flex-container-donde-venimos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    #flex-container-donde-venimos > div {
+        width: 48%;
+    }
+    #flex-container-donde-venimos img {
+        width: 35vw;
+        height: 55vw;
+        position: relative;
+        top: -17vh;
+        left: 11vw;
+        z-index: 1;
+    }
+    #flex-container-donde-venimos h1 {
+        padding: 0;
+        margin-top: 7vh;
+        margin-bottom: 2vh;
+        font-size: 2.5vw;
+    }
+    #flex-container-donde-venimos p {
+        width: 35vw;
+        font-size: 1.3vw;
+        padding: 0;
+    }
+
+
+    /*SECCIÓN: INVITADOS*/
+
+    #flex-container-invitados {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 4vh;  
+    }
+    #flex-container-invitados > div {
+        width: 33.33%;
+        height: 27vw;
+    }
+    #flex-container-invitados img {
+        width: 100%;
+        height: inherit;
+    }
+
+
+    /*NOVEDADES*/
+
+    .container-episodios h1 {
+        padding: 0 0 4vh 0;
+        margin: 0;
+    }
+
+
+    /*FOOTER*/
+
+    #flex-container-footer {
+        justify-content: space-between;
+    }
+    #flex-container-footer > div {
+        width: 45%;
+    }
+}

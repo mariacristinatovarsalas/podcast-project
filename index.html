@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Maria Cristina Tovar">
+	<meta name="description" content="El portal de podcasts que explora el mundo de la programación y la tecnología.">
+	<title>Hello pale blue dot</title>
+	<link rel="icon" href="./images/favicon.png" sizes="32x32" type="image/png">
+	<link rel="stylesheet" href="styles/styles.css" type="text/css">
+	<script src="https://use.fontawesome.com/b00e97bffd.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+	<header>
+		<img src="images/logo.svg" alt="logo" id="logo">
+		<input type="checkbox" id="hamburger"/>
+		<div>
+			<label for="hamburger" id="hamburguesa">&#9776;</label>
+			<label for="hamburger" id="equis">&#10005;</label>
+		</div>
+		<nav>
+			<a href="#episodios">EPISODIOS</a>
+			<a href="#flex-container-donde-venimos">NOSOTROS</a>
+			<a href="#invitados">ENTREVISTAS</a>
+			<a href="#temas">TÓPICOS</a>
+		</nav>    
+	</header>
+
+
+	<section>
+		<h1 id="h1-intro">Hello <span style="text-decoration:line-through">world</span> pale blue dot<span id="dot">.</span></h1>
+		<p id="p-intro-mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+		<p id="p-intro-desktop">El portal de podcasts que explora el mundo de la programación y<br>la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+		<div id="container-button"><a href="#temas" class="button">CONOCÉ MÁS</a></div>
+	</section>
+
+
+	<section id="episodios">
+		<div class="reposo-diagonal">
+			<div class="efecto-diagonal"></div>
+		</div>
+		<div class="container-episodios">
+			<h1>Episodios</h1>
+			<div id="flex-container-episodios">
+				<div><iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" height="232" allow="encrypted-media"></iframe></div>
+				<div><iframe src="https://open.spotify.com/embed-podcast/episode/6lzD9VWNM40HAxkVz0a8NX" height="232" allow="encrypted-media"></iframe></div>
+				<div><iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" height="232" allow="encrypted-media"></iframe></div>
+				<div><iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" height="232" allow="encrypted-media"></iframe></div>
+			</div>
+		</div>
+		<div class="reposo-diagonal">
+			<div class="efecto-diagonal" id="efecto-diagonal"></div>
+		</div>
+	</section>
+
+
+	<section id="flex-container-donde-venimos">
+		<div><img src="images/phone.png" alt="phone"></div>
+		<div>
+			<h1>De dónde venimos</h1>
+			<p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br><br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+		</div>
+	</section>
+
+
+	<section id="invitados">
+		<h1>Invitadas/os estelares</h1>
+		<div id="flex-container-invitados">
+			<div><img src="images/grace_hopper.png" alt="Grace Hopper"></div>
+			<div><img src="images/katie_bouman.png" alt="Katie Bouman"></div>
+			<div><img src="images/margaret_hamilton.png" alt="Margaret Hamilton"></div>
+			<div><img src="images/univac_1103.png" alt="UNIVAC 1103"></div>
+			<div><img src="images/eniac.png" alt="ENIAC Computer"></div>
+			<div><img src="images/susan_kare.png" alt="Susan Kare"></div>
+		</div>  
+	</section>
+
+	
+	<section id="temas">
+		<h1>Algunos de nuestros temas</h1>
+		<div id="flex-container-temas">
+			<div>
+				<img src="images/icon1.svg" alt="Trabajo remoto">
+				<h2>Trabajo remoto</h2>
+		  	</div>
+		  	<div id="div-repensando-la-programacion">
+				<img src="images/icon2.svg" alt="Repensando la programación">
+				<h2>Repensando la<br>programación</h2>
+		  	</div>
+		  	<div>
+				<img src="images/icon3.svg" alt="Bases del código">
+				<h2>Bases del código</h2>
+		  	</div>
+		  	<div>
+				<img src="images/icon4.svg" alt="Seguridad informática">
+				<h2>Seguridad informática</h2>
+		  	</div>
+		</div>  
+	</section>
+
+	
+	<section>
+		<div class="reposo-diagonal">
+			<div class="efecto-diagonal"></div>
+		</div>
+		<div class="container-episodios">
+			<h1>¿Querés las últimas novedades?</h1>
+			<div class="container-button"><a href="#episodios" class="button">ESCUCHÁ LOS EPISODIOS</a></div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div id="flex-container-footer">
+			<div>
+				<p>&#169; 2019- Hello blue pale dot</p>
+				<p>by María Cristina Tovar Salas</p>
+		  	</div>
+			<div>
+				<a href="https://www.spotify.com/ar/" target="_blank"><i class="fa fa-spotify"></i></a>
+				<a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://web.telegram.org/#/login" target="_blank"><i class="fa fa-telegram"></i></a>
+		  	</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
